@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import { Question } from "@/data/questions";
 
 export default function QuestionCard({
@@ -22,57 +23,93 @@ export default function QuestionCard({
   }
 
   return (
-    <div className="p-4 border rounded-lg bg-white shadow-sm text-black">
-      <div className="font-medium mb-3">{q.text}</div>
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="p-6 border rounded-2xl bg-white shadow-md text-black"
+    >
+      <div className="font-semibold mb-4 text-lg">{q.text}</div>
 
-      <div className="space-y-2">
+      <div className="space-y-3">
         {q.options.map((opt, idx) => {
           const isSelected = selected === idx;
           const isCorrect = q.correctIndex === idx;
+
           let base =
-            "flex items-center p-3 rounded-md border cursor-pointer transition text-black";
+            "flex items-center p-3 rounded-xl border cursor-pointer transition-all text-black";
 
           if (!locked) {
-            base += " hover:bg-gray-50";
+            base += " hover:bg-gray-50 hover:shadow-sm";
           } else {
-            if (isCorrect) base += " border-green-500 bg-green-50";
+            if (isCorrect)
+              base += " border-green-500 bg-green-50 shadow-green-200";
             else if (isSelected && !isCorrect)
-              base += " border-red-500 bg-red-50 opacity-90";
+              base += " border-red-500 bg-red-50 shadow-red-200";
             else base += " opacity-70";
           }
 
           return (
-            <div
+            <motion.div
               key={idx}
+              whileTap={{ scale: 0.97 }}
+              animate={
+                locked && isSelected
+                  ? { scale: [1, 1.05, 1], transition: { duration: 0.3 } }
+                  : {}
+              }
               className={base}
               onClick={() => handleChoose(idx)}
             >
-              <div className="mr-3 font-semibold">
+              <div className="mr-3 font-semibold text-gray-700">
                 {String.fromCharCode(65 + idx)}.
               </div>
-              <div>{opt}</div>
-              {locked && isCorrect && (
-                <div className="ml-auto text-green-600 font-medium">✔</div>
-              )}
-              {locked && isSelected && !isCorrect && (
-                <div className="ml-auto text-red-600 font-medium">✖</div>
-              )}
-            </div>
+              <div className="flex-1">{opt}</div>
+              <AnimatePresence>
+                {locked && isCorrect && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="ml-auto text-green-600 font-medium"
+                  >
+                    ✔
+                  </motion.div>
+                )}
+                {locked && isSelected && !isCorrect && (
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.5 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="ml-auto text-red-600 font-medium"
+                  >
+                    ✖
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
           );
         })}
       </div>
 
-      {locked && selected !== q.correctIndex && (
-        <div className="mt-3 p-3 bg-yellow-50 border border-yellow-300 rounded text-black">
-          <div className="text-sm">
-            Đáp án đúng:{" "}
-            <strong>
-              {String.fromCharCode(65 + q.correctIndex)}.{" "}
-              {q.options[q.correctIndex]}
-            </strong>
-          </div>
-        </div>
-      )}
-    </div>
+      <AnimatePresence>
+        {locked && selected !== q.correctIndex && (
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0 }}
+            className="mt-4 p-3 bg-yellow-50 border border-yellow-300 rounded-lg text-black"
+          >
+            <div className="text-sm">
+              Đáp án đúng:{" "}
+              <strong>
+                {String.fromCharCode(65 + q.correctIndex)}.{" "}
+                {q.options[q.correctIndex]}
+              </strong>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </motion.div>
   );
 }
