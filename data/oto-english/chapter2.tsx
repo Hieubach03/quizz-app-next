@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter2: Chapter = {
   id: "2",
   title: "Chương 2 - Material Using in Engineering",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -91,13 +92,23 @@ export const chapter2: Chapter = {
     {
       id: "q15",
       text: "Which types of wheels cannot be used with a tubeless tire?",
-      options: ["Disc wheel", "Light alloy wheel", "Wire wheel", "Composite wheel"],
+      options: [
+        "Disc wheel",
+        "Light alloy wheel",
+        "Wire wheel",
+        "Composite wheel",
+      ],
       correctIndex: 2,
     },
     {
       id: "q16",
       text: "Which type of wheels is preferred in sports cars?",
-      options: ["Disc wheel", "Wire wheel", "Magnesium alloy wheel", "Aluminum alloy wheel"],
+      options: [
+        "Disc wheel",
+        "Wire wheel",
+        "Magnesium alloy wheel",
+        "Aluminum alloy wheel",
+      ],
       correctIndex: 2,
     },
     {
@@ -109,31 +120,56 @@ export const chapter2: Chapter = {
     {
       id: "q18",
       text: "Where will an underinflated tire wear the thread most?",
-      options: ["Near center", "Near the edge", "In the cross direction", "In the lateral direction"],
+      options: [
+        "Near center",
+        "Near the edge",
+        "In the cross direction",
+        "In the lateral direction",
+      ],
       correctIndex: 1,
     },
     {
       id: "q19",
       text: "Where will an overinflated tire wear the thread most?",
-      options: ["Near center", "Near the edge", "In the cross direction", "In the lateral direction"],
+      options: [
+        "Near center",
+        "Near the edge",
+        "In the cross direction",
+        "In the lateral direction",
+      ],
       correctIndex: 0,
     },
     {
       id: "q20",
       text: "What do the permissible of mixing cross-ply and radial-ply automobile tires allow?",
-      options: ["Cross-ply tires on left wheels", "Cross-ply tires on right wheels", "Cross-ply tires on front wheels", "Cross-ply tires on rear wheels"],
+      options: [
+        "Cross-ply tires on left wheels",
+        "Cross-ply tires on right wheels",
+        "Cross-ply tires on front wheels",
+        "Cross-ply tires on rear wheels",
+      ],
       correctIndex: 2,
     },
     {
       id: "q21",
       text: "What is the purpose of tire rotation on automobiles?",
-      options: ["Avoid ply separation", "Equalize wear", "Get better ride", "Reduce bump"],
+      options: [
+        "Avoid ply separation",
+        "Equalize wear",
+        "Get better ride",
+        "Reduce bump",
+      ],
       correctIndex: 1,
     },
     {
       id: "q22",
       text: "Which are the two materials used in a bimetallic piston?",
-      options: ["Copper and steel", "Magnesium and aluminum", "Steel and cast iron", "Aluminum and steel"],
+      options: [
+        "Copper and steel",
+        "Magnesium and aluminum",
+        "Steel and cast iron",
+        "Aluminum and steel",
+      ],
       correctIndex: 3,
     },
     {
@@ -145,7 +181,12 @@ export const chapter2: Chapter = {
     {
       id: "q24",
       text: "Which among the following casting process is used in the casting of the piston?",
-      options: ["Investment casting", "Low-pressure casting", "Sand casting", "Gravity die casting"],
+      options: [
+        "Investment casting",
+        "Low-pressure casting",
+        "Sand casting",
+        "Gravity die casting",
+      ],
       correctIndex: 3,
     },
     {
@@ -157,13 +198,23 @@ export const chapter2: Chapter = {
     {
       id: "q26",
       text: "On what principle does the braking system in the car work?",
-      options: ["Frictional force", "Gravitational force", "Magnetic force", "Electric force"],
+      options: [
+        "Frictional force",
+        "Gravitational force",
+        "Magnetic force",
+        "Electric force",
+      ],
       correctIndex: 0,
     },
     {
       id: "q27",
       text: "Which of the following is not a method to avoid piston slap?",
-      options: ["Taper piston", "Piston with T-slots", "Offset piston", "Increase the size of the piston skirt"],
+      options: [
+        "Taper piston",
+        "Piston with T-slots",
+        "Offset piston",
+        "Increase the size of the piston skirt",
+      ],
       correctIndex: 3,
     },
     {
@@ -181,7 +232,12 @@ export const chapter2: Chapter = {
     {
       id: "q30",
       text: "Which of the following is the main reason for a burnt piston?",
-      options: ["Hot air intake", "Leak of coolant", "More clearance", "Detonation"],
+      options: [
+        "Hot air intake",
+        "Leak of coolant",
+        "More clearance",
+        "Detonation",
+      ],
       correctIndex: 3,
     },
     {
@@ -217,7 +273,12 @@ export const chapter2: Chapter = {
     {
       id: "q36",
       text: "Which type of casting process is used to cast cylinder liners?",
-      options: ["Centrifugal casting", "Investment casting", "Die casting", "Sand casting"],
+      options: [
+        "Centrifugal casting",
+        "Investment casting",
+        "Die casting",
+        "Sand casting",
+      ],
       correctIndex: 0,
     },
     {
@@ -259,13 +320,23 @@ export const chapter2: Chapter = {
     {
       id: "q43",
       text: "Aluminium cylinder blocks require __________",
-      options: ["Cast iron Liners", "Brass Liners", "Aluminium Liners", "No Liners"],
+      options: [
+        "Cast iron Liners",
+        "Brass Liners",
+        "Aluminium Liners",
+        "No Liners",
+      ],
       correctIndex: 0,
     },
     {
       id: "q44",
       text: "Which of the following is the most important property of the lubricant?",
-      options: ["Density", "Thermal conductivity", "Viscosity", "Melting point"],
+      options: [
+        "Density",
+        "Thermal conductivity",
+        "Viscosity",
+        "Melting point",
+      ],
       correctIndex: 2,
     },
     {
@@ -295,13 +366,23 @@ export const chapter2: Chapter = {
     {
       id: "q49",
       text: "The electrical system of an automobile contains which of the following?",
-      options: ["Battery", "Alternators", "Lighting systems", "All of the mentioned"],
+      options: [
+        "Battery",
+        "Alternators",
+        "Lighting systems",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
       id: "q50",
       text: "The electrical system of an automobile contains which of the following?",
-      options: ["Battery", "Alternators", "Lighting systems", "All of the mentioned"],
+      options: [
+        "Battery",
+        "Alternators",
+        "Lighting systems",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
   ],

@@ -1,12 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import { chapters } from "@/data/questions";
+import { subjects } from "@/data/subjects";
 import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
-    <main className="min-h-screen bg-gradient-to-b from-gray-50 to-gray-100 p-6 text-black">
+    <main className="min-h-screen bg-linear-to-b from-gray-50 to-gray-100 p-6 text-black">
       <div className="max-w-3xl mx-auto">
         <motion.h1
           initial={{ opacity: 0, y: -10 }}
@@ -14,12 +14,12 @@ export default function HomePage() {
           transition={{ duration: 0.5 }}
           className="text-3xl font-bold mb-10 text-center"
         >
-          🚗 Web Trắc Nghiệm - Ôn tập tiếng Anh chuyên ngành Ô tô
+          📚 Web Trắc Nghiệm - Chọn môn học
         </motion.h1>
 
         <div className="grid grid-cols-1 gap-6">
-          {chapters.map((chapter, i) => (
-            <Link key={chapter.id} href={`/chapter/${chapter.id}`}>
+          {subjects.map((subject, i) => (
+            <Link key={subject.id} href={`/subject/${subject.id}`}>
               <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -32,10 +32,10 @@ export default function HomePage() {
                 className="p-5 bg-white rounded-2xl border shadow-sm cursor-pointer transition-all"
               >
                 <h2 className="font-semibold text-lg text-gray-800">
-                  {chapter.title}
+                  {subject.title}
                 </h2>
                 <p className="text-sm text-gray-600">
-                  {chapter.questions.length} câu hỏi
+                  {subject.chapters.length} chương
                 </p>
               </motion.div>
             </Link>

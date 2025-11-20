@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter3: Chapter = {
   id: "3",
   title: "Chương 3 - Engine and Its Components",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -25,7 +26,12 @@ export const chapter3: Chapter = {
     {
       id: "q4",
       text: "Piston is a cylindrical unit, used to compress the charge during ____________",
-      options: ["Compression stroke", "Compression cycle", "Intake stroke", "Stroke"],
+      options: [
+        "Compression stroke",
+        "Compression cycle",
+        "Intake stroke",
+        "Stroke",
+      ],
       correctIndex: 0,
     },
     {
@@ -65,7 +71,7 @@ export const chapter3: Chapter = {
         "It lower downs the temperature",
         "It forms a pressurised chamber for fuel air mixture",
         "It holds the exhaust gases after combustion",
-        "None of the mentioned"
+        "None of the mentioned",
       ],
       correctIndex: 1,
     },
@@ -78,7 +84,12 @@ export const chapter3: Chapter = {
     {
       id: "q12",
       text: "Engine pistons are generally made of aluminium alloy because ______",
-      options: ["It is lighter", "It is stronger", "It has less wear", "It absorbs shock"],
+      options: [
+        "It is lighter",
+        "It is stronger",
+        "It has less wear",
+        "It absorbs shock",
+      ],
       correctIndex: 0,
     },
     {
@@ -90,7 +101,12 @@ export const chapter3: Chapter = {
     {
       id: "q14",
       text: "What type of material is used for Gudgeon pin?",
-      options: ["Cast iron", "Aluminium", "Steel alloy of high strength", "Hardened and ground steel"],
+      options: [
+        "Cast iron",
+        "Aluminium",
+        "Steel alloy of high strength",
+        "Hardened and ground steel",
+      ],
       correctIndex: 2,
     },
     {
@@ -102,7 +118,12 @@ export const chapter3: Chapter = {
     {
       id: "q16",
       text: "Two stroke engine is preferred for small vehicle because",
-      options: ["Fuel consumption is low", "Shock and vibrations are less", "Its size is small", "It is easy to control"],
+      options: [
+        "Fuel consumption is low",
+        "Shock and vibrations are less",
+        "Its size is small",
+        "It is easy to control",
+      ],
       correctIndex: 2,
     },
     {
@@ -112,7 +133,7 @@ export const chapter3: Chapter = {
         "Smaller than that of the exhaust valve",
         "Equal to that of the exhaust valve",
         "Larger than that of the exhaust valve",
-        "Not depending upon the size of exhaust valve"
+        "Not depending upon the size of exhaust valve",
       ],
       correctIndex: 2,
     },
@@ -123,14 +144,19 @@ export const chapter3: Chapter = {
         "Pre ignition in the engine",
         "Suction of air for engine",
         "Pre opening of the exhaust valve",
-        "High pressure in the cylinder"
+        "High pressure in the cylinder",
       ],
       correctIndex: 1,
     },
     {
       id: "q19",
       text: "Piston displacement is calculated from the",
-      options: ["Cylinder diameter and length", "Piston length and diameter", "Bore and stroke", "None"],
+      options: [
+        "Cylinder diameter and length",
+        "Piston length and diameter",
+        "Bore and stroke",
+        "None",
+      ],
       correctIndex: 2,
     },
     {
@@ -140,7 +166,7 @@ export const chapter3: Chapter = {
         "The ratio of engine H.P to laden weight of vehicle",
         "Max. engine torque/wt. of vehicle",
         "Only on the laden weight of vehicle",
-        "The power to weight ratio of engine"
+        "The power to weight ratio of engine",
       ],
       correctIndex: 1,
     },
@@ -151,20 +177,30 @@ export const chapter3: Chapter = {
         "Thermal efficiency will be increased",
         "Volumetric efficiency will be increased",
         "Air standard efficiency will be decreased",
-        "Air standard efficiency will be increased"
+        "Air standard efficiency will be increased",
       ],
       correctIndex: 3,
     },
     {
       id: "q22",
       text: "The combustion process in a diesel engine is",
-      options: ["Constant pressure process", "Isothermal process", "Constant volume process", "Adiabatic process"],
+      options: [
+        "Constant pressure process",
+        "Isothermal process",
+        "Constant volume process",
+        "Adiabatic process",
+      ],
       correctIndex: 0,
     },
     {
       id: "q23",
       text: "The temperature of the compressed air should be __________________ of the fuel",
-      options: ["Below the flash point", "Above the flash point", "Above the flash point", "Between the fire and flash point"],
+      options: [
+        "Below the flash point",
+        "Above the flash point",
+        "Above the flash point",
+        "Between the fire and flash point",
+      ],
       correctIndex: 2,
     },
     {
@@ -174,7 +210,7 @@ export const chapter3: Chapter = {
         "Cool the oil",
         "Remove vaporised water and fuel",
         "Supply oxygen to the crankcase",
-        "It assists in maintaining the viscosity of oil"
+        "It assists in maintaining the viscosity of oil",
       ],
       correctIndex: 1,
     },
@@ -185,38 +221,63 @@ export const chapter3: Chapter = {
         "It prevents the valve from rotating",
         "It links the connecting rod to the crankshaft",
         "It ensure the piston ring to the piston",
-        "It connect the piston to the connecting rod"
+        "It connect the piston to the connecting rod",
       ],
       correctIndex: 3,
     },
     {
       id: "q26",
       text: "The engine produces mechanical power that is transmitted to the automobile’s wheels through a __________",
-      options: ["suspension system", "wheel system", "drivetrain system", "all correct"],
+      options: [
+        "suspension system",
+        "wheel system",
+        "drivetrain system",
+        "all correct",
+      ],
       correctIndex: 2,
     },
     {
       id: "q27",
       text: "_________ systems provide control over direction and speed.",
-      options: ["Drivetrain", "Steering and braking", "Wheel system", "Suspension system"],
+      options: [
+        "Drivetrain",
+        "Steering and braking",
+        "Wheel system",
+        "Suspension system",
+      ],
       correctIndex: 1,
     },
     {
       id: "q28",
       text: "The piston _____ in the cylinder bore to evacuate the combustion chamber.",
-      options: ["Moves downward", "Descends", "Passes from a higher to a lower place", "All correct"],
+      options: [
+        "Moves downward",
+        "Descends",
+        "Passes from a higher to a lower place",
+        "All correct",
+      ],
       correctIndex: 3,
     },
     {
       id: "q29",
       text: "A petrol engine, whether four- or two-stroke, is called a _____",
-      options: ["Electriacal Ignition engine", "Compressed Ignition engine", "Spark Ignition engine", "All correct"],
+      options: [
+        "Electriacal Ignition engine",
+        "Compressed Ignition engine",
+        "Spark Ignition engine",
+        "All correct",
+      ],
       correctIndex: 2,
     },
     {
       id: "q30",
       text: "There are two methods by which fuel is injected into a combustion chamber, they are _____.",
-      options: ["Blowing & intaking", "Compressing & exhausting", "Direct or indirect injection", "All correct"],
+      options: [
+        "Blowing & intaking",
+        "Compressing & exhausting",
+        "Direct or indirect injection",
+        "All correct",
+      ],
       correctIndex: 2,
     },
     {
@@ -240,7 +301,12 @@ export const chapter3: Chapter = {
     {
       id: "q34",
       text: "The main advantage of using aluminium alloy for cylinder head is ____________",
-      options: ["Lightness in weight", "High thermal conductivity", "Less corrosion rate", "Cost"],
+      options: [
+        "Lightness in weight",
+        "High thermal conductivity",
+        "Less corrosion rate",
+        "Cost",
+      ],
       correctIndex: 1,
     },
     {
@@ -250,14 +316,19 @@ export const chapter3: Chapter = {
         "Engine war-up",
         "Higher fuel consumption",
         "Cylinder head stick to cylinder block",
-        "Gaskets get damaged"
+        "Gaskets get damaged",
       ],
       correctIndex: 2,
     },
     {
       id: "q36",
       text: "Why cylinder head cast as a separate piece?",
-      options: ["Good compression ratio", "High efficiency", "Prevent collision", "Easy removal"],
+      options: [
+        "Good compression ratio",
+        "High efficiency",
+        "Prevent collision",
+        "Easy removal",
+      ],
       correctIndex: 3,
     },
     {
@@ -299,19 +370,34 @@ export const chapter3: Chapter = {
     {
       id: "q43",
       text: "A heat engine converts heat energy from fuel combustion or any other source into which type of work?",
-      options: ["Electrical work", "Mechanical work", "Pressure work", "None of the mentioned"],
+      options: [
+        "Electrical work",
+        "Mechanical work",
+        "Pressure work",
+        "None of the mentioned",
+      ],
       correctIndex: 1,
     },
     {
       id: "q44",
       text: "A steam engine comes under the category of ________",
-      options: ["External combustion engines", "Internal combustion engines", "All of the mentioned", "None of the mentioned"],
+      options: [
+        "External combustion engines",
+        "Internal combustion engines",
+        "All of the mentioned",
+        "None of the mentioned",
+      ],
       correctIndex: 0,
     },
     {
       id: "q45",
       text: "Which of these is a power absorbing heat engine?",
-      options: ["Steam engine", "Petrol engine", "Air compressor", "None of the mentioned"],
+      options: [
+        "Steam engine",
+        "Petrol engine",
+        "Air compressor",
+        "None of the mentioned",
+      ],
       correctIndex: 2,
     },
     {
@@ -323,13 +409,23 @@ export const chapter3: Chapter = {
     {
       id: "q47",
       text: "A gas undergoes step 4 in Carnot cycle. Which of these processes describes the 2nd step?",
-      options: ["Isentropic expansion", "Isentropic compression", "Isothermal expansion", "Isothermal compression"],
+      options: [
+        "Isentropic expansion",
+        "Isentropic compression",
+        "Isothermal expansion",
+        "Isothermal compression",
+      ],
       correctIndex: 1,
     },
     {
       id: "q48",
       text: "Thermal power plants operate on which of these cycles?",
-      options: ["Otto cycle", "Rankine cycle", "Carnot cycle", "Stirling cycle"],
+      options: [
+        "Otto cycle",
+        "Rankine cycle",
+        "Carnot cycle",
+        "Stirling cycle",
+      ],
       correctIndex: 1,
     },
     {
@@ -341,7 +437,12 @@ export const chapter3: Chapter = {
     {
       id: "q50",
       text: "The torque available at the contact between road and driving wheel is called _________",
-      options: ["Brake power", "Friction power", "Tractive effort", "Engine torque"],
+      options: [
+        "Brake power",
+        "Friction power",
+        "Tractive effort",
+        "Engine torque",
+      ],
       correctIndex: 2,
     },
   ],

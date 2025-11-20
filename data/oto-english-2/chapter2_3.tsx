@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter6: Chapter = {
   id: "6",
   title: "Chương 6 - Design of Car",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -31,7 +32,12 @@ export const chapter6: Chapter = {
     {
       id: "q5",
       text: "Otto cycle is used in which engine?",
-      options: ["External combustion engine", "Petrol engine", "Diesel engine", "Steam engine"],
+      options: [
+        "External combustion engine",
+        "Petrol engine",
+        "Diesel engine",
+        "Steam engine",
+      ],
       correctIndex: 1,
     },
     {
@@ -55,7 +61,12 @@ export const chapter6: Chapter = {
     {
       id: "q9",
       text: "The black smoke coming out of a petrol engine is due to what particles?",
-      options: ["Oxygen molecules", "Magnesium particles", "Nitrox", "Carbon particles"],
+      options: [
+        "Oxygen molecules",
+        "Magnesium particles",
+        "Nitrox",
+        "Carbon particles",
+      ],
       correctIndex: 3,
     },
     {
@@ -67,7 +78,12 @@ export const chapter6: Chapter = {
     {
       id: "q11",
       text: "Which of the mentioned below is the external combustion engine?",
-      options: ["Wankel engine", "Steam engine", "Petrol engine", "VTEC engine"],
+      options: [
+        "Wankel engine",
+        "Steam engine",
+        "Petrol engine",
+        "VTEC engine",
+      ],
       correctIndex: 1,
     },
     {
@@ -85,19 +101,34 @@ export const chapter6: Chapter = {
     {
       id: "q14",
       text: "Why aluminum alloy pistons are used in highly rated engine?",
-      options: ["Due to its thermal factor", "Due to its alloying element", "Due to the piston speed", "Due to circular"],
+      options: [
+        "Due to its thermal factor",
+        "Due to its alloying element",
+        "Due to the piston speed",
+        "Due to circular",
+      ],
       correctIndex: 2,
     },
     {
       id: "q15",
       text: "Cast iron pistons were used in low-speed cars, why?",
-      options: ["Due to inertia force", "Due to low-speed piston", "Due to momentum", "Due to centrifugal force"],
+      options: [
+        "Due to inertia force",
+        "Due to low-speed piston",
+        "Due to momentum",
+        "Due to centrifugal force",
+      ],
       correctIndex: 1,
     },
     {
       id: "q16",
       text: "Why aluminum alloy pistons need more clearance?",
-      options: ["Free moment", "Good fixture", "Thermal expansion", "Cold start"],
+      options: [
+        "Free moment",
+        "Good fixture",
+        "Thermal expansion",
+        "Cold start",
+      ],
       correctIndex: 2,
     },
     {
@@ -109,19 +140,34 @@ export const chapter6: Chapter = {
     {
       id: "q18",
       text: "Which is the electrolyte used in Li-ion battery?",
-      options: ["Lead dioxide", "Lithium-based gel", "Sulfur dioxide", "Cobalt"],
+      options: [
+        "Lead dioxide",
+        "Lithium-based gel",
+        "Sulfur dioxide",
+        "Cobalt",
+      ],
       correctIndex: 1,
     },
     {
       id: "q19",
       text: "Which of the following statement is true for the movement of electrons concerning the direction of current?",
-      options: ["Same as the direction of current", "Opposite direction of current", "Does not depend on the direction of current", "No movement of electrons"],
+      options: [
+        "Same as the direction of current",
+        "Opposite direction of current",
+        "Does not depend on the direction of current",
+        "No movement of electrons",
+      ],
       correctIndex: 1,
     },
     {
       id: "q20",
       text: "Which is the material used to as anode in a lithium-ion battery?",
-      options: ["Brass foil coated with graphite", "Aluminum foil coated with graphite", "Copper foil coated with graphite", "Stainless steel coated with graphite"],
+      options: [
+        "Brass foil coated with graphite",
+        "Aluminum foil coated with graphite",
+        "Copper foil coated with graphite",
+        "Stainless steel coated with graphite",
+      ],
       correctIndex: 2,
     },
     {
@@ -145,13 +191,23 @@ export const chapter6: Chapter = {
     {
       id: "q24",
       text: "Which test is used to determine the evaporative emissions from an engine?",
-      options: ["Canister test", "Cat aging test", "Vibration test", "SHED test"],
+      options: [
+        "Canister test",
+        "Cat aging test",
+        "Vibration test",
+        "SHED test",
+      ],
       correctIndex: 3,
     },
     {
       id: "q25",
       text: "Which test is used to measure a coating’s resistance to abrasions?",
-      options: ["Coating and paint testing", "Gravelometer testing", "Emission bench testing", "Mechanical testing"],
+      options: [
+        "Coating and paint testing",
+        "Gravelometer testing",
+        "Emission bench testing",
+        "Mechanical testing",
+      ],
       correctIndex: 1,
     },
     {
@@ -175,13 +231,23 @@ export const chapter6: Chapter = {
     {
       id: "q29",
       text: "Which are the two forces experienced by the center crankshaft?",
-      options: ["Tensile and compressive", "Tensile and Bending", "Compressive and torsional", "Bending and torsional"],
+      options: [
+        "Tensile and compressive",
+        "Tensile and Bending",
+        "Compressive and torsional",
+        "Bending and torsional",
+      ],
       correctIndex: 3,
     },
     {
       id: "q30",
       text: "Which material is used for crankshaft?",
-      options: ["Carbon steel", "Carbon fiber", "Plain carbon steel", "Bulged carbon steel"],
+      options: [
+        "Carbon steel",
+        "Carbon fiber",
+        "Plain carbon steel",
+        "Bulged carbon steel",
+      ],
       correctIndex: 2,
     },
   ],

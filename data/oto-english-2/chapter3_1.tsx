@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter7: Chapter = {
   id: "7",
   title: "Chương 7 - Future Car",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -11,7 +12,7 @@ export const chapter7: Chapter = {
         "Anti-knock characteristics of alcohol are poor",
         "Alcohol contains about half the heat energy of gasoline/liter",
         "Alcohol does not vaporize as easily as gasoline",
-        "Alcohols are corrosive in nature"
+        "Alcohols are corrosive in nature",
       ],
       correctIndex: 0,
     },
@@ -22,7 +23,7 @@ export const chapter7: Chapter = {
         "To reduce the emission",
         "To increase the power output",
         "To increase the power efficiency",
-        "To improve cold-weather starting"
+        "To improve cold-weather starting",
       ],
       correctIndex: 3,
     },
@@ -33,14 +34,19 @@ export const chapter7: Chapter = {
         "The engine which uses gaseous and liquid fuel",
         "The engine which uses two liquid fuels",
         "The engine which uses two gaseous fuels",
-        "The engine which uses one liquid and any other fuel"
+        "The engine which uses one liquid and any other fuel",
       ],
       correctIndex: 0,
     },
     {
       id: "q4",
       text: "Which of the following has the same combustion as HCCI (Homogeneous Charge Compression Ignition) engine?",
-      options: ["SI engine", "CI engine", "Hybrid of both SI and CI engine", "Wankel engine"],
+      options: [
+        "SI engine",
+        "CI engine",
+        "Hybrid of both SI and CI engine",
+        "Wankel engine",
+      ],
       correctIndex: 2,
     },
     {
@@ -50,26 +56,41 @@ export const chapter7: Chapter = {
         "Emits high NOₓ and soot",
         "Have a large power range",
         "Efficiency is comparatively less",
-        "Pre-catalyst hydrocarbon emissions are higher"
+        "Pre-catalyst hydrocarbon emissions are higher",
       ],
       correctIndex: 3,
     },
     {
       id: "q6",
       text: "For which of the following engine lean-burn concept is ideal?",
-      options: ["CI engine", "SI engine", "Free piston engine", "Wankel engine"],
+      options: [
+        "CI engine",
+        "SI engine",
+        "Free piston engine",
+        "Wankel engine",
+      ],
       correctIndex: 1,
     },
     {
       id: "q7",
       text: "By which technique can the charge stratification be achieved?",
-      options: ["Injection", "Carburetion", "Lean burn technology", "Injection as well as carburation"],
+      options: [
+        "Injection",
+        "Carburetion",
+        "Lean burn technology",
+        "Injection as well as carburation",
+      ],
       correctIndex: 3,
     },
     {
       id: "q8",
       text: "Which of the following is true for stratified charge engine?",
-      options: ["More prone for knock", "Multi-fuel capabilities", "More throttling losses", "Overall rich mixture"],
+      options: [
+        "More prone for knock",
+        "Multi-fuel capabilities",
+        "More throttling losses",
+        "Overall rich mixture",
+      ],
       correctIndex: 1,
     },
     {
@@ -79,7 +100,7 @@ export const chapter7: Chapter = {
         "It is a rotary external combustion engine",
         "It is more expensive",
         "It has a longer operating cycle",
-        "It has less time to complete the combustion"
+        "It has less time to complete the combustion",
       ],
       correctIndex: 2,
     },
@@ -96,7 +117,7 @@ export const chapter7: Chapter = {
         "More prone for knock",
         "It uses an overall rich mixture",
         "It has a lot of throttling losses",
-        "It has multi-fuel capabilities"
+        "It has multi-fuel capabilities",
       ],
       correctIndex: 3,
     },
@@ -107,20 +128,30 @@ export const chapter7: Chapter = {
         "High efficiency",
         "Quiet operation",
         "Compatible with alternative and renewable energy",
-        "High efficiency, quiet operation and compatible with renewable energy"
+        "High efficiency, quiet operation and compatible with renewable energy",
       ],
       correctIndex: 3,
     },
     {
       id: "q13",
       text: "Which of the following is one of the major exhaust emissions from CI engines compared to SI engines?",
-      options: ["Oxides of nitrogen", "Particulates", "CO and CO₂", "Unburnt hydrocarbon"],
+      options: [
+        "Oxides of nitrogen",
+        "Particulates",
+        "CO and CO₂",
+        "Unburnt hydrocarbon",
+      ],
       correctIndex: 1,
     },
     {
       id: "q14",
       text: "Which of the following causes the photochemical smog?",
-      options: ["Excess O₂", "CO and CO₂", "Soot and particulate matter", "NOₓ and HC"],
+      options: [
+        "Excess O₂",
+        "CO and CO₂",
+        "Soot and particulate matter",
+        "NOₓ and HC",
+      ],
       correctIndex: 3,
     },
     {
@@ -138,19 +169,34 @@ export const chapter7: Chapter = {
     {
       id: "q17",
       text: "For what purpose is the Rhodium used?",
-      options: ["To reduce CO and HC", "To reduce NOₓ", "To reduce CO", "To reduce HC"],
+      options: [
+        "To reduce CO and HC",
+        "To reduce NOₓ",
+        "To reduce CO",
+        "To reduce HC",
+      ],
       correctIndex: 1,
     },
     {
       id: "q18",
       text: "Why is the fumigation technique used?",
-      options: ["To control HC", "To control NOₓ", "To control CO", "To control smoke"],
+      options: [
+        "To control HC",
+        "To control NOₓ",
+        "To control CO",
+        "To control smoke",
+      ],
       correctIndex: 3,
     },
     {
       id: "q19",
       text: "Why are lead compounds added in petrol?",
-      options: ["Reduce knocking", "Reduce HC emission", "Reduce exhaust temperature", "Increase power output"],
+      options: [
+        "Reduce knocking",
+        "Reduce HC emission",
+        "Reduce exhaust temperature",
+        "Increase power output",
+      ],
       correctIndex: 1,
     },
     {
@@ -184,20 +230,30 @@ export const chapter7: Chapter = {
         "90% ethanol + 10% gasoline",
         "10% ethanol + 90% gasoline",
         "40% ethanol + 60% gasoline",
-        "50% ethanol + 50% gasoline"
+        "50% ethanol + 50% gasoline",
       ],
       correctIndex: 1,
     },
     {
       id: "q25",
       text: "Which of the following is a disadvantage of hydrogen as a fuel in IC engine?",
-      options: ["Storage is easy", "Low NOₓ emissions", "Detonating tendency", "Easy handling"],
+      options: [
+        "Storage is easy",
+        "Low NOₓ emissions",
+        "Detonating tendency",
+        "Easy handling",
+      ],
       correctIndex: 2,
     },
     {
       id: "q26",
       text: "Which of the following is the advantage of the hydrogen as a fuel?",
-      options: ["High volumetric efficiency", "Low fuel cost", "No HC and CO emissions", "Relatively safe"],
+      options: [
+        "High volumetric efficiency",
+        "Low fuel cost",
+        "No HC and CO emissions",
+        "Relatively safe",
+      ],
       correctIndex: 2,
     },
     {
@@ -207,7 +263,7 @@ export const chapter7: Chapter = {
         "Reduction in the life of the engine",
         "Less power compared to gasoline",
         "Reduction in the life of the engine and less power compared to gasoline",
-        "Knocking tendency"
+        "Knocking tendency",
       ],
       correctIndex: 2,
     },
@@ -218,7 +274,7 @@ export const chapter7: Chapter = {
         "Alcohols have a high self-ignition temperature",
         "The latent heat of vaporization is low",
         "Alcohols have high self-ignition temperature and low latent heat of vaporization",
-        "High efficiency"
+        "High efficiency",
       ],
       correctIndex: 2,
     },

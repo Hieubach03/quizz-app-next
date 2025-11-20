@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter5: Chapter = {
   id: "5",
   title: "Chương 5 - Fuel System and Carburetion",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -241,7 +242,12 @@ export const chapter5: Chapter = {
     {
       id: "q40",
       text: "The PCV valve is connected between the crankcase and the ________.",
-      options: ["intake manifold", "exhaust manifold", "fuel tank", "air filter"],
+      options: [
+        "intake manifold",
+        "exhaust manifold",
+        "fuel tank",
+        "air filter",
+      ],
       correctIndex: 0,
     },
     {

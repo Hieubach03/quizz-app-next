@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image, { StaticImageData } from "next/image";
 import { Question } from "@/data/questions";
 
 export default function QuestionCard({
   q,
   onAnswer,
 }: {
-  q: Question;
+  q: Question & { image?: string | StaticImageData };
   onAnswer?: (correct: boolean) => void;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
@@ -30,6 +31,18 @@ export default function QuestionCard({
       className="p-6 border rounded-2xl bg-white shadow-md text-black"
     >
       <div className="font-semibold mb-4 text-lg">{q.text}</div>
+
+      {/* Hiển thị ảnh nếu có */}
+      {q.image && (
+        <div className="relative w-full h-80 mb-10">
+          <Image
+            src={q.image}
+            alt={q.text}
+            fill
+            className="object-contain rounded-lg"
+          />
+        </div>
+      )}
 
       <div className="space-y-3">
         {q.options.map((opt, idx) => {

@@ -1,43 +1,74 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter4: Chapter = {
   id: "4",
   title: "Chương 4 - Automobile Systems Overview",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
       text: "The engine produces mechanical power that is transmitted to the automobile’s wheels through a drivetrain.",
-      options: ["transmission & driveshaft(s).", "differential & axles.", "All correct.", "All incorrect."],
+      options: [
+        "transmission & driveshaft(s).",
+        "differential & axles.",
+        "All correct.",
+        "All incorrect.",
+      ],
       correctIndex: 2,
     },
     {
       id: "q2",
       text: "The engine produces mechanical power that is transmitted to the automobile’s wheels through a drivetrain.",
-      options: ["transmission & driveshaft(s).", "differential & axles.", "All correct.", "All incorrect."],
+      options: [
+        "transmission & driveshaft(s).",
+        "differential & axles.",
+        "All correct.",
+        "All incorrect.",
+      ],
       correctIndex: 2,
     },
     {
       id: "q3",
       text: "SUVs is a __________",
-      options: ["Same-utility vehicles", "Sport-universal vehicles", "Sport-utility vehicles", "Sport-utility vendor."],
+      options: [
+        "Same-utility vehicles",
+        "Sport-universal vehicles",
+        "Sport-utility vehicles",
+        "Sport-utility vendor.",
+      ],
       correctIndex: 2,
     },
     {
       id: "q4",
       text: "Power is produced during",
-      options: ["intake stroke", "compression stroke", "combustion stroke", "exhaust stroke"],
+      options: [
+        "intake stroke",
+        "compression stroke",
+        "combustion stroke",
+        "exhaust stroke",
+      ],
       correctIndex: 2,
     },
     {
       id: "q5",
       text: "An SI engine is:",
-      options: ["a type of internal combustion engine", "a Stirling engine", "always fuel injected", "none of the above"],
+      options: [
+        "a type of internal combustion engine",
+        "a Stirling engine",
+        "always fuel injected",
+        "none of the above",
+      ],
       correctIndex: 0,
     },
     {
       id: "q6",
       text: "The two-stroke engine does not use _____",
-      options: ["spark plug", "inlet and exhaust valves", "crankshaft", "piston"],
+      options: [
+        "spark plug",
+        "inlet and exhaust valves",
+        "crankshaft",
+        "piston",
+      ],
       correctIndex: 1,
     },
     {
@@ -67,7 +98,12 @@ export const chapter4: Chapter = {
     {
       id: "q11",
       text: "The intake stroke draws air and fuel into the combustion chamber",
-      options: ["induction stroke.", "income stroke.", "introduction stroke", "all correct."],
+      options: [
+        "induction stroke.",
+        "income stroke.",
+        "introduction stroke",
+        "all correct.",
+      ],
       correctIndex: 0,
     },
     {
@@ -77,20 +113,30 @@ export const chapter4: Chapter = {
         "Power loss due to friction of piston bearings and gears",
         "Power loss from clutch to drive wheel due to friction of various parts",
         "Transmission line loss",
-        "None of the mentioned"
+        "None of the mentioned",
       ],
       correctIndex: 3,
     },
     {
       id: "q13",
       text: "The force that opposes the motion of a vehicle is _______",
-      options: ["Rolling resistance", "Gradient resistance", "Wind or air resistance", "All of the mentioned"],
+      options: [
+        "Rolling resistance",
+        "Gradient resistance",
+        "Wind or air resistance",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
       id: "q14",
       text: "Rolling resistance does not depend on which of the following factors?",
-      options: ["Load on each road wheel", "Radius of driving wheel", "Wheel inflation pressure", "Nature of road surface"],
+      options: [
+        "Load on each road wheel",
+        "Radius of driving wheel",
+        "Wheel inflation pressure",
+        "Nature of road surface",
+      ],
       correctIndex: 1,
     },
     {
@@ -102,7 +148,12 @@ export const chapter4: Chapter = {
     {
       id: "q16",
       text: "Wind or air resistance depends on which of the following factors?",
-      options: ["Shape and size of vehicle body", "Air velocity", "Speed of vehicle", "All of the mentioned"],
+      options: [
+        "Shape and size of vehicle body",
+        "Air velocity",
+        "Speed of vehicle",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
@@ -120,7 +171,12 @@ export const chapter4: Chapter = {
     {
       id: "q19",
       text: "Gradient resistance for a vehicle depends on which of the following factors?",
-      options: ["Weight of the vehicle", "Size of the vehicle", "Width of tyres", "Speed of the vehicle"],
+      options: [
+        "Weight of the vehicle",
+        "Size of the vehicle",
+        "Width of tyres",
+        "Speed of the vehicle",
+      ],
       correctIndex: 0,
     },
     {
@@ -204,7 +260,12 @@ export const chapter4: Chapter = {
     {
       id: "q33",
       text: "The gears on camshaft and crankshaft are known as ________",
-      options: ["Lining gears", "Aligning gears", "Timing gears", "Tuning gears"],
+      options: [
+        "Lining gears",
+        "Aligning gears",
+        "Timing gears",
+        "Tuning gears",
+      ],
       correctIndex: 2,
     },
     {
@@ -234,7 +295,12 @@ export const chapter4: Chapter = {
     {
       id: "q38",
       text: "The crankshaft should be inspected for ______",
-      options: ["Cracks", "Alignment of crankpins and journals", "Cleanliness of oil gallaries", "All of the mentioned"],
+      options: [
+        "Cracks",
+        "Alignment of crankpins and journals",
+        "Cleanliness of oil gallaries",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
@@ -246,13 +312,23 @@ export const chapter4: Chapter = {
     {
       id: "q40",
       text: "Which of the following contains no linkage between the clutch and the pedal?",
-      options: ["Clutch – by – wire", "Wet clutch", "Hydraulic single plate clutch", "Hydraulic multi-plate clutch"],
+      options: [
+        "Clutch – by – wire",
+        "Wet clutch",
+        "Hydraulic single plate clutch",
+        "Hydraulic multi-plate clutch",
+      ],
       correctIndex: 0,
     },
     {
       id: "q41",
       text: "Where is the clutch located?",
-      options: ["Between transmission and engine", "Between transmission and rear axle", "Between transmission and propeller shaft", "Between transmission and differential"],
+      options: [
+        "Between transmission and engine",
+        "Between transmission and rear axle",
+        "Between transmission and propeller shaft",
+        "Between transmission and differential",
+      ],
       correctIndex: 0,
     },
     {
@@ -270,31 +346,56 @@ export const chapter4: Chapter = {
     {
       id: "q44",
       text: "What does the venturi in carburetor cause?",
-      options: ["Increase of air velocity", "A decrease in air velocity", "A decrease in fuel flow", "Decrease of manifold vacuum"],
+      options: [
+        "Increase of air velocity",
+        "A decrease in air velocity",
+        "A decrease in fuel flow",
+        "Decrease of manifold vacuum",
+      ],
       correctIndex: 0,
     },
     {
       id: "q45",
       text: "Where does the power for mechanical fuel pump come from?",
-      options: ["Camshaft", "Crankshaft", "Distributor shaft", "Propeller shaft"],
+      options: [
+        "Camshaft",
+        "Crankshaft",
+        "Distributor shaft",
+        "Propeller shaft",
+      ],
       correctIndex: 0,
     },
     {
       id: "q46",
       text: "How can a two-stroke engine identify by?",
-      options: ["Piston size", "Absence of valves", "Cooling system", "Lubrication system"],
+      options: [
+        "Piston size",
+        "Absence of valves",
+        "Cooling system",
+        "Lubrication system",
+      ],
       correctIndex: 1,
     },
     {
       id: "q47",
       text: "At which stroke the fuel is injected in the CI engine?",
-      options: ["Suction stroke", "Compression stroke", "Expansion stroke", "Exhaust stroke"],
+      options: [
+        "Suction stroke",
+        "Compression stroke",
+        "Expansion stroke",
+        "Exhaust stroke",
+      ],
       correctIndex: 1,
     },
     {
       id: "q48",
       text: "The stroke of an engine is the _________",
-      options: ["Volume of the cylinder", "Length of the connecting rod", "Internal diameter of the cylinder", "Distance between TDC and BDC"],
+      options: [
+        "Volume of the cylinder",
+        "Length of the connecting rod",
+        "Internal diameter of the cylinder",
+        "Distance between TDC and BDC",
+      ],
       correctIndex: 3,
     },
     {

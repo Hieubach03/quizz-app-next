@@ -1,8 +1,9 @@
-import { Chapter } from "./types";
+import { Chapter } from "../types";
 
 export const chapter1: Chapter = {
   id: "1",
   title: "Chương 1 - Introduction to Car",
+  subjectId: "oto-english",
   questions: [
     {
       id: "q1",
@@ -49,7 +50,12 @@ export const chapter1: Chapter = {
     {
       id: "q8",
       text: "The phrase to talk about “ How much petrol or diesel the car uses ”",
-      options: ["Fuel consumption", "Fuel efficiency", "Fuel amount", "Fuel value"],
+      options: [
+        "Fuel consumption",
+        "Fuel efficiency",
+        "Fuel amount",
+        "Fuel value",
+      ],
       correctIndex: 0,
     },
     {
@@ -61,7 +67,12 @@ export const chapter1: Chapter = {
     {
       id: "q10",
       text: "Why is frame of car made from Steel?",
-      options: ["Capability to absorb impact energy", "Price", "Fuel comsumption", "Speed"],
+      options: [
+        "Capability to absorb impact energy",
+        "Price",
+        "Fuel comsumption",
+        "Speed",
+      ],
       correctIndex: 0,
     },
     {
@@ -79,43 +90,78 @@ export const chapter1: Chapter = {
     {
       id: "q13",
       text: "Which of these cars is a Crossover SUV?",
-      options: ["Nissan Pathfinder", "Hyundai Sonata", "Suzuki Servo", "Fiat Panda"],
+      options: [
+        "Nissan Pathfinder",
+        "Hyundai Sonata",
+        "Suzuki Servo",
+        "Fiat Panda",
+      ],
       correctIndex: 0,
     },
     {
       id: "q14",
       text: "Which of these is a compact executive car?",
-      options: ["Mercedes-Benz S Class", "Audi A8", "Audi A4", "Mercedes-Benz E Class"],
+      options: [
+        "Mercedes-Benz S Class",
+        "Audi A8",
+        "Audi A4",
+        "Mercedes-Benz E Class",
+      ],
       correctIndex: 2,
     },
     {
       id: "q15",
       text: "What is the power delivered by the engine to the crankshaft called?",
-      options: ["Shaft power", "Horse power", "Brake power", "None of the mentioned"],
+      options: [
+        "Shaft power",
+        "Horse power",
+        "Brake power",
+        "None of the mentioned",
+      ],
       correctIndex: 2,
     },
     {
       id: "q16",
       text: "The torque available at the contact between road and driving wheel is called _________",
-      options: ["Brake power", "Friction power", "Tractive effort", "Engine torque"],
+      options: [
+        "Brake power",
+        "Friction power",
+        "Tractive effort",
+        "Engine torque",
+      ],
       correctIndex: 2,
     },
     {
       id: "q17",
       text: "The force that opposes the motion of a vehicle is _______",
-      options: ["Rolling resistance", "Gradient resistance", "Wind or air resistance", "All of the mentioned"],
+      options: [
+        "Rolling resistance",
+        "Gradient resistance",
+        "Wind or air resistance",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
       id: "q18",
       text: "Wind or air resistance depends on which of the following factors?",
-      options: ["Shape and size of vehicle body", "Air velocity", "Speed of vehicle", "All of the mentioned"],
+      options: [
+        "Shape and size of vehicle body",
+        "Air velocity",
+        "Speed of vehicle",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
       id: "q19",
       text: "Gradient resistance for a vehicle depends on which of the following factors?",
-      options: ["Weight of the vehicle", "Size of the vehicle", "Width of tyres", "Speed of the vehicle"],
+      options: [
+        "Weight of the vehicle",
+        "Size of the vehicle",
+        "Width of tyres",
+        "Speed of the vehicle",
+      ],
       correctIndex: 0,
     },
     {
@@ -139,25 +185,45 @@ export const chapter1: Chapter = {
     {
       id: "q23",
       text: "A 4*2 drive vehicle implies that",
-      options: ["It has 4*2=8 wheels", "It has 2 auxiliary wheels and 4 drive wheels", "It has 4 wheels out of which 2 are drive wheels", "None of the mentioned"],
+      options: [
+        "It has 4*2=8 wheels",
+        "It has 2 auxiliary wheels and 4 drive wheels",
+        "It has 4 wheels out of which 2 are drive wheels",
+        "None of the mentioned",
+      ],
       correctIndex: 2,
     },
     {
       id: "q24",
       text: "A delivery van falls under the category of which type of vehicles.",
-      options: ["Heavy passenger vehicles", "Light passenger vehicles", "Heavy goods vehicles", "Light goods vehicles"],
+      options: [
+        "Heavy passenger vehicles",
+        "Light passenger vehicles",
+        "Heavy goods vehicles",
+        "Light goods vehicles",
+      ],
       correctIndex: 3,
     },
     {
       id: "q25",
       text: "Abbreviation HEVs stands for what",
-      options: ["Highly Efficient Vehicles", "Hybrid Electric Vehicles", "Highly Economic Vehicles", "Highly Engineered Vehicles"],
+      options: [
+        "Highly Efficient Vehicles",
+        "Hybrid Electric Vehicles",
+        "Highly Economic Vehicles",
+        "Highly Engineered Vehicles",
+      ],
       correctIndex: 1,
     },
     {
       id: "q26",
       text: "In Automobile, what does SUV stand for?",
-      options: ["Sport Utility Vehicle", "Sub-urban Utility Vehicles", "Short Urban Vehicles", "Super Utility Vehicles"],
+      options: [
+        "Sport Utility Vehicle",
+        "Sub-urban Utility Vehicles",
+        "Short Urban Vehicles",
+        "Super Utility Vehicles",
+      ],
       correctIndex: 0,
     },
     {
@@ -169,19 +235,34 @@ export const chapter1: Chapter = {
     {
       id: "q28",
       text: "A conventional suspension system uses which of these?",
-      options: ["Leaf Springs", "Coil Springs", "Torsion bars", "None of the mentioned"],
+      options: [
+        "Leaf Springs",
+        "Coil Springs",
+        "Torsion bars",
+        "None of the mentioned",
+      ],
       correctIndex: 0,
     },
     {
       id: "q29",
       text: "A heat engine converts heat energy from fuel combustion or any other source into which type of work?",
-      options: ["Electrical work", "Mechanical work", "Pressure work", "None of the mentioned"],
+      options: [
+        "Electrical work",
+        "Mechanical work",
+        "Pressure work",
+        "None of the mentioned",
+      ],
       correctIndex: 1,
     },
     {
       id: "q30",
       text: "Which of these is a power absorbing heat engine?",
-      options: ["Steam engine", "Petrol engine", "Air compressor", "None of the mentioned"],
+      options: [
+        "Steam engine",
+        "Petrol engine",
+        "Air compressor",
+        "None of the mentioned",
+      ],
       correctIndex: 2,
     },
     {
@@ -205,13 +286,23 @@ export const chapter1: Chapter = {
     {
       id: "q34",
       text: "In four cylinder engines the ignition advance depends on _________ ?",
-      options: ["Quality of fuel", "Engine speed", "Cylinder dimensions", "Quality of fuel and engine speed"],
+      options: [
+        "Quality of fuel",
+        "Engine speed",
+        "Cylinder dimensions",
+        "Quality of fuel and engine speed",
+      ],
       correctIndex: 3,
     },
     {
       id: "q35",
       text: "Ignition advance is expressed in terms of _________ ?",
-      options: ["Crank angle", "Millimetres of piston travel before TDC", "Time in milli seconds", "All of the mentioned"],
+      options: [
+        "Crank angle",
+        "Millimetres of piston travel before TDC",
+        "Time in milli seconds",
+        "All of the mentioned",
+      ],
       correctIndex: 3,
     },
     {
@@ -229,7 +320,12 @@ export const chapter1: Chapter = {
     {
       id: "q38",
       text: "In a four stroke S.I engine the exhaust valve usually opens ______ ?",
-      options: ["At BDC", "35 degree to 60 degree before BDC", "35 degree to 60 degree after BDC", "10 degree to 20 degree before BDC"],
+      options: [
+        "At BDC",
+        "35 degree to 60 degree before BDC",
+        "35 degree to 60 degree after BDC",
+        "10 degree to 20 degree before BDC",
+      ],
       correctIndex: 1,
     },
     {
